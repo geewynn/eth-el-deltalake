@@ -7,16 +7,18 @@ load_dotenv()
 
 
 BUCKET_NAME = os.getenv('BUCKET_NAME')
+GCP_PROJECT_ID = os.getenv('GCP_PROJECT_ID')
+DATASET_NAME = os.getenv('DATASET_NAME')
+TABLE_NAME = os.getenv('TABLE_NAME')
 FILE_NAME = 'block-full.json'
 
 # use this if you are running locally
 # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "<service-acct-json>"
 data_file_path = f'gs://{BUCKET_NAME}/{FILE_NAME}'
-print(data_file_path)
 
 
 client = bigquery.Client()
-table_id = 'godwin-dbt.stripe.block-test'
+table_id = f'{GCP_PROJECT_ID}.{DATASET_NAME}.{TABLE_NAME}'
 
 job_config = bigquery.LoadJobConfig(
     schema=[

@@ -9,6 +9,8 @@ Extract full raw ethereum block data into a data lake and load that data into bi
 GCP_PROJECT_ID=<gcp project id>
 BUCKET_NAME=<gcp bucket name>
 INFURA_URL=<ethereum node rpc endpoint>
+DATASET_NAME=<bq dataset name>
+TABLE_NAME=<bq table name>
 ```
 
 **blockBatch.py** - this python file extracts blockchain block data and store in google cloud storage.

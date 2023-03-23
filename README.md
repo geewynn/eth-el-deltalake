@@ -29,3 +29,11 @@ install requirements
 
 `pip install -r requirements.txt`
 
+## GCS Bucket
+![image](https://user-images.githubusercontent.com/29405050/227135622-2290ab0f-79c0-409f-bcb1-f9daf12b76f3.png)
+
+
+## BQ Warehouse
+![image](https://user-images.githubusercontent.com/29405050/227135069-580445c5-f71a-4e91-b60f-77dd563ce873.png)
+
+
